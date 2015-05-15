@@ -1,0 +1,43 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+   border: 0px;
+   background: #d9534f;
+   border-bottom: 1px solid black;
+   padding-bottom: 5px;
+   padding-top: 5px;
+   margin-bottom: 0px;
+}
+
+#navigation {
+    background-color: #d9534f;
+}
+
+.container-fluid {
+}
+
+.navbar li > a { 
+	color: #FFFFFF;
+} 
+
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+  padding-top: 15px;
+  padding-left: 25px;
+  font-size: 30px;
+}
+
+.navbar-container-right {
+	padding-top: 1px;
+	padding-top: 5px;
+	padding-right: 25px;
+	font-size: 14px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 400;
+}
+
+.navbar-form {
+	margin: 0px;
+	padding-top: 2.5px;
+}
