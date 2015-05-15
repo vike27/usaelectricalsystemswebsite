@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand">Usa Electrical Systems</a>
+    </div>
+    
+    <div class="navbar-container-right">
+      
+      <ul class="nav nav-pills navbar-right">
+        <li>
+          <%= link_to 'Home', root_path %>
+        </li>
+        <li>
+          <%= link_to 'Services', services_path %>
+        </li>
+        <li>
+          <%= link_to 'Locations', locations_path %>
+        </li>
+        <li>
+          <%= link_to 'Blog', posts_path %>
+        </li>
+        <li>  
+          <% if current_admin.present? %>
+            <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
+          <% end %>
+        </li>
+      </ul>
+
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
