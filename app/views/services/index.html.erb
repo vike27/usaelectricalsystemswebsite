@@ -1,0 +1,21 @@
+<div class="container">
+
+	<h2>Our Services</h2>
+	</br>
+	<h3>We Are The Residential Electrical Repair Experts for Los Angeles!</h3>
+	</br>
+	<p>Have you got an electrical issue? Need a new lighting fixture or ceiling fan installed? Maybe you need an outlet moved or replaced. Maybe you need a new outlet install - for that new flat panel television. When you choose Powell Electric, you're choosing a Los Angeles electrician with over 30 years experience in residential electric service, repair and installation.
+	</p>
+	</br>
+	<h3>All Things Electrical</h3>
+	<p>No matter the electrical need in your home or office, Powell Electric is the Los Angeles electrician to call! We specialize in residential electric repair. Our technicians are skilled and trained to meet your residential electrical needs.
+	</p>
+	</br>
+	<h3>Here are the residential electrical services we provide:</h3>
+		<% @services.each do |service| %>
+			<ul class="list-group">
+				<%= link_to "#{service.name}", service_path(service), class: "list-group-item" %>
+			</ul>
+		<% end %>
+
+</div>

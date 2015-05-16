@@ -22,7 +22,12 @@
         </li>
         <li>  
           <% if current_admin.present? %>
-            <%= link_to 'Sign Out',destroy_user_session_path, :method => :delete %>
+            <%= link_to 'Add Service', new_service_path %>
+          <% end %>
+        </li>
+        <li>  
+          <% if current_admin.present? %>
+            <%= link_to 'Sign Out',destroy_admin_session_path, :method => :delete %>
           <% end %>
         </li>
       </ul>
